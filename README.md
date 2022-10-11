@@ -1,6 +1,6 @@
 👋 Hi, I'm robotics enthusiastic with several years of experience in software development with C++ and Python. My main areas of interest are:
-- machine learning, 
-- computer vision
+- machine learning.
+- computer vision.
 - robotics.
 
  💞️ I’m looking to collaborate on robotics and computer vision projects.  
