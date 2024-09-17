@@ -16,6 +16,9 @@ I'm a robotics enthusiast with several years of experience in software developme
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=behnamasadi)](https://github.com/ryo-ma/github-profile-trophy)
 
+![Visitor Count](https://profile-counter.glitch.me/{behnamasadi}/count.svg)
+
+
 <!---
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=behnamasadi&layout=pie)](https://github.com/anuraghazra/github-readme-stats)
