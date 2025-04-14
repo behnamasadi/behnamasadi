@@ -29,3 +29,25 @@ I'm a robotics enthusiast with several years of experience in software developme
 behnamasadi/behnamasadi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+
+
+
+
+### <a href="https://www.kaggle.com/asadibehnam">
+  <img src="https://kaggle.com/static/images/site-logo.svg" width="100" alt="Kaggle"> 🏆</a> 
+
+[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?logo=kaggle)](https://www.kaggle.com/asadibehnam)
+[![Kaggle Competitions](https://img.shields.io/badge/Kaggle-Competitions-blue?logo=kaggle)](https://www.kaggle.com/asadibehnam)
+[![Kaggle Notebooks](https://img.shields.io/badge/Kaggle-Notebooks-orange?logo=kaggle)](https://www.kaggle.com/asadibehnam/code)
+[![Kaggle Discussion](https://img.shields.io/badge/Kaggle-Discussion-green?logo=kaggle)](https://www.kaggle.com/asadibehnam/discussion)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Bronze%20Medal%20🥉-brown?logo=kaggle)](https://www.kaggle.com/asadibehnam)
+
+
+
+<!-- 
+[![Kaggle](https://img.shields.io/badge/Kaggle%20Learn-Computer%20Vision%20Certified-blue?logo=kaggle)](https://www.kaggle.com/learn/certification/asadibehnam/computer-vision)
+-->
+
+
+
+
