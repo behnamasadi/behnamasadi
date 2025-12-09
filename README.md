@@ -9,25 +9,26 @@ I'm a robotics enthusiast with several years of experience in software developme
 - [My Website](https://ros-developer.com/)
 - [My Youtube channel](https://www.youtube.com/channel/UCnqeTYe-w2qMTjIlmB82RXQ)  
 
-
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=behnamasadi&show_icons=true)
-
+---
 
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=behnamasadi)](https://github.com/ryo-ma/github-profile-trophy)
 
+
+## 📊 GitHub Stats  
+
+![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=behnamasadi&show_icons=true&theme=transparent)
+
+## 🏆 GitHub Trophies  
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=behnamasadi&theme=onedark&margin-w=10&margin-h=10)](https://github.com/ryo-ma/github-profile-trophy)
+
+
+---
 
 ![Snake animation](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/snake.svg)
 
 
-
-
-[![Snake animation](https://raw.githubusercontent.com/behnamasadi/behnamasadi/output/snake.svg)
-](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/snake.svg)
-
-
-
-
+---
 
 ### <a href="https://www.kaggle.com/asadibehnam">
   <img src="https://kaggle.com/static/images/site-logo.svg" width="100" alt="Kaggle"> 🏆</a> 
@@ -38,6 +39,7 @@ I'm a robotics enthusiast with several years of experience in software developme
 [![Kaggle Discussion](https://img.shields.io/badge/Kaggle-Discussion-green?logo=kaggle)](https://www.kaggle.com/asadibehnam/discussion)
 [![Kaggle](https://img.shields.io/badge/Kaggle-Bronze%20Medal%20🥉-brown?logo=kaggle)](https://www.kaggle.com/asadibehnam)
 
+---
 
 
 <!-- 
