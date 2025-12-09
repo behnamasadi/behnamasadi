@@ -21,8 +21,8 @@ I'm a robotics enthusiast with several years of experience in software developme
 
 
 
-![Snake animation](https://raw.githubusercontent.com/behnamasadi/behnamasadi/output/snake.svg)
-
+[![Snake animation](https://raw.githubusercontent.com/behnamasadi/behnamasadi/output/snake.svg)
+](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/snake.svg)
 
 
 
