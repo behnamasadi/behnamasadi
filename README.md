@@ -16,19 +16,9 @@ I'm a robotics enthusiast with several years of experience in software developme
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=behnamasadi)](https://github.com/ryo-ma/github-profile-trophy)
 
-<!---
-![Visitor Count](https://profile-counter.glitch.me/{behnamasadi}/count.svg)
---->
 
-<!---
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=behnamasadi&layout=pie)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=behnamasadi)](https://github.com/anuraghazra/github-readme-stats)
---->
-<!---
-behnamasadi/behnamasadi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
 
 
 
@@ -47,6 +37,54 @@ You can click the Preview link to take a look at your changes.
 <!-- 
 [![Kaggle](https://img.shields.io/badge/Kaggle%20Learn-Computer%20Vision%20Certified-blue?logo=kaggle)](https://www.kaggle.com/learn/certification/asadibehnam/computer-vision)
 -->
+
+
+
+
+
+
+
+## 🚀 Tools & Technologies
+
+### 🧠 Programming Languages
+<p>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="45" height="45" alt="C"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="45" height="45" alt="C++"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" height="45" alt="Python"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" width="45" height="45" alt="MATLAB"/>
+</p>
+
+### 🤖 Robotics & Simulation
+<p>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ros/ros-original.svg" width="45" height="45" alt="ROS"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gazebo/gazebo-original.svg" width="45" height="45" alt="Gazebo"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" width="45" height="45" alt="OpenCV"/>
+</p>
+
+### 🔥 Deep Learning & ML
+<p>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="45" height="45" alt="PyTorch"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" width="45" height="45" alt="scikit-learn"/>
+</p>
+
+### 🛠️ Development Tools
+<p>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="45" height="45" alt="VSCode"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" width="45" height="45" alt="CMake"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="45" height="45" alt="Git"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="45" height="45" alt="GitHub"/>
+</p>
+
+### 🐧 OS & DevOps
+<p>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="45" height="45" alt="Linux"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" width="45" height="45" alt="Ubuntu"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="45" height="45" alt="Docker"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" width="45" height="45" alt="GitHub Actions"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="45" height="45" alt="Bash"/>
+</p>
+
+
 
 
 
