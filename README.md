@@ -17,6 +17,7 @@ I'm a robotics enthusiast with several years of experience in software developme
 [![trophy](https://github-profile-trophy.vercel.app/?username=behnamasadi)](https://github.com/ryo-ma/github-profile-trophy)
 
 
+![Snake animation](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/snake.svg)
 
 
 
