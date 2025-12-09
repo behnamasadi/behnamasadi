@@ -11,6 +11,10 @@ I'm a robotics enthusiast with several years of experience in software developme
 
 ---
 
+## 📊 GitHub Stats
+![GitHub Stats](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/github-stats.svg)
+
+
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=behnamasadi&show_icons=true&theme=transparent&count_private=true&include_all_commits=true&token=${{ secrets.PAT }})
 
 
