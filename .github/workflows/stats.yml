@@ -1,0 +1,30 @@
+name: Generate GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"    # daily
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download GitHub Stats SVG
+        env:
+          TOKEN: ${{ secrets.PAT }}
+        run: |
+          curl -H "Authorization: token $TOKEN" \
+            "https://github-readme-stats.vercel.app/api?username=behnamasadi&show_icons=true&count_private=true&include_all_commits=true&theme=transparent" \
+            --output output/github-stats.svg
+
+      - name: Commit stats
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add output/github-stats.svg
+          git commit -m "Update GitHub Stats" || echo "No changes"
+          git push
