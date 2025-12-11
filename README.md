@@ -7,11 +7,12 @@
 - [My Youtube channel](https://www.youtube.com/channel/UCnqeTYe-w2qMTjIlmB82RXQ)  
 
 ---
-## 🏆 Kaggle Trophies
+## 🏅 Kaggle Medals
 
+<!-- 
 ### <a href="https://www.kaggle.com/asadibehnam">
   <img src="https://kaggle.com/static/images/site-logo.svg" width="100" alt="Kaggle"> 🏆</a> 
-
+-->
 [![Kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?logo=kaggle)](https://www.kaggle.com/asadibehnam)
 [![Kaggle Competitions](https://img.shields.io/badge/Kaggle-Competitions-blue?logo=kaggle)](https://www.kaggle.com/asadibehnam)
 [![Kaggle Notebooks](https://img.shields.io/badge/Kaggle-Notebooks-orange?logo=kaggle)](https://www.kaggle.com/asadibehnam/code)
@@ -24,6 +25,9 @@
 
 ## 📊 GitHub Stats
 ![GitHub Stats](https://github-readme-stats-lemon-chi.vercel.app/api?username=behnamasadi&show_icons=true&theme=transparent&count_private=true&include_all_commits=true)
+
+## 🏆 GitHub Trophies
+![trophy](https://github-profile-trophy-beta-six.vercel.app/?username=behnamasadi&theme=onedark&margin-w=10&margin-h=10)
 
 
 ## 📊 Top Langs
@@ -72,8 +76,6 @@
 
 
 
-## 🏆 GitHub Trophies
-![trophy](https://github-profile-trophy-beta-six.vercel.app/?username=behnamasadi&theme=onedark&margin-w=10&margin-h=10)
 
 
 ---
