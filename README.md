@@ -12,14 +12,15 @@ I'm a robotics enthusiast with several years of experience in software developme
 ---
 
 ## 📊 GitHub Stats
-
-
-## 📊 GitHub Stats (Private Vercel Instance)
 ![GitHub Stats](https://github-readme-stats-lemon-chi.vercel.app/api?username=behnamasadi&show_icons=true&theme=transparent&count_private=true&include_all_commits=true)
 
 
+## 📊 Top Langs
 ![Top Langs](https://github-readme-stats-lemon-chi.vercel.app/api/top-langs/?username=behnamasadi&layout=compact&theme=transparent)
 
+<!-- 
+## 🏆 GitHub Trophies (Private Vercel Instance)
+![trophy](https://github-profile-trophy-beta-six.vercel.app/?username=behnamasadi&theme=onedark&margin-w=10&margin-h=10)
 
 
 ![GitHub Stats](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/github-stats.svg)
@@ -37,7 +38,7 @@ I'm a robotics enthusiast with several years of experience in software developme
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=behnamasadi&theme=onedark&margin-w=10&margin-h=10)](https://github.com/ryo-ma/github-profile-trophy)
 
-
+-->
 ---
 
 ![Snake animation](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/snake.svg)
