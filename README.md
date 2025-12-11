@@ -1,4 +1,4 @@
-"I'm a robotics software developer with several years of experience building robust systems in C++ and Python. I am actively bridging the gap between traditional robotics and AI by developing deep learning skills focused on computer vision (CV), and sensor fusion  for autonomous decision-making. My goal is to create intelligent robots that can perceive and interact with complex environments dynamically."
+I'm a robotics software developer with several years of experience building robust systems in C++ and Python. I am actively bridging the gap between traditional robotics and AI by developing deep learning skills with a focus on computer vision and sensor fusion for autonomous decision-making. My goal is to create intelligent robots that can perceive and interact with complex environments dynamically.
 
 
  📫 How to reach me behnam |dot| asadi |at| gmail.com
