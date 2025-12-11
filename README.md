@@ -27,7 +27,7 @@
 ![GitHub Stats](https://github-readme-stats-lemon-chi.vercel.app/api?username=behnamasadi&show_icons=true&theme=transparent&count_private=true&include_all_commits=true)
 
 ## 🏆 GitHub Trophies
-![trophy](https://github-profile-trophy-beta-six.vercel.app/?username=behnamasadi&theme=onedark&margin-w=10&margin-h=10)
+![trophy](https://github-profile-trophy-beta-six.vercel.app/?username=behnamasadi&margin-w=10&margin-h=10)
 
 
 ## 📊 Top Langs
