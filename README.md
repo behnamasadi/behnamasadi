@@ -12,6 +12,16 @@ I'm a robotics enthusiast with several years of experience in software developme
 ---
 
 ## 📊 GitHub Stats
+
+
+## 📊 GitHub Stats (Private Vercel Instance)
+![GitHub Stats](https://github-readme-stats-lemon-chi.vercel.app/api?username=behnamasadi&show_icons=true&theme=transparent&count_private=true&include_all_commits=true)
+
+
+![Top Langs](https://github-readme-stats-lemon-chi.vercel.app/api/top-langs/?username=behnamasadi&layout=compact&theme=transparent)
+
+
+
 ![GitHub Stats](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/github-stats.svg)
 
 
