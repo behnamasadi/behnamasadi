@@ -1,0 +1,176 @@
+
+# ✅ GitHub Contribution Snake — Working Setup Summary
+
+This documents the **exact steps and fixes** that resulted in a **working snake animation** on my GitHub profile.
+
+---
+
+## 1️⃣ Create the Profile Repository
+
+GitHub renders a profile README from a repository named **exactly** the same as the username.
+
+Example:
+
+```
+https://github.com/behnamasadi/behnamasadi
+```
+
+The file used is:
+
+```
+README.md
+```
+
+---
+
+## 2️⃣ Create the `output/` Folder (GitHub UI)
+
+GitHub does not track empty folders, so the folder was created via:
+
+**Add file → Create new file**
+
+Filename:
+
+```
+output/.gitkeep
+```
+
+This guarantees:
+
+```
+output/
+```
+
+exists and can receive generated files.
+
+---
+
+## 3️⃣ Add the Snake Workflow
+
+Create:
+
+```
+.github/workflows/snake.yml
+```
+
+Working workflow (important versions included):
+
+```yaml
+name: Generate Snake Animation
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate snake animation
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: behnamasadi
+          outputs: |
+            output/snake.svg
+            output/snake-dark.svg
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add output/snake.svg output/snake-dark.svg
+          git commit -m "Update snake animation" || exit 0
+          git push
+```
+
+### Key points that mattered:
+
+* `actions/checkout@v4` (v3 is deprecated)
+* `Platane/snk/svg-only@v3`
+* Output files written to a **folder**, not a branch
+* Files committed back to `main`
+
+---
+
+## 4️⃣ Fix Deprecated Artifact Error
+
+Originally the workflow failed due to:
+
+```
+actions/upload-artifact@v3 (deprecated)
+```
+
+**Solution**:
+Removed the artifact step entirely — it is **not needed** for snake rendering.
+
+Only committing the SVGs is sufficient.
+
+---
+
+## 5️⃣ Correct the README Image URL (Critical Fix)
+
+### ❌ What did NOT work
+
+This path assumes an `output` branch (which does not exist):
+
+```
+https://raw.githubusercontent.com/behnamasadi/behnamasadi/output/snake.svg
+```
+
+### ✅ What worked
+
+The file lives in the **main branch**, inside the `output/` folder:
+
+```
+https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/snake.svg
+```
+
+---
+
+## 6️⃣ Final README Snippet (Working)
+
+```md
+![Snake animation](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/snake.svg)
+```
+
+Optional dark/light mode support:
+
+```md
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+          srcset="https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/snake-dark.svg" />
+  <img alt="Snake animation"
+       src="https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/snake.svg" />
+</picture>
+```
+
+---
+
+## 7️⃣ Verification Checklist
+
+All of the following must be true:
+
+* ✅ `output/snake.svg` exists in `main`
+* ✅ GitHub Action runs without errors
+* ✅ README uses `/main/output/snake.svg`
+* ✅ No `output` branch is referenced
+* ✅ Workflow commits SVGs back to repo
+
+---
+
+## ✅ Result
+
+* Snake animation renders correctly on the GitHub profile
+* Updates automatically (daily or on push)
+* No external services needed at render time
+* No rate limits
+* No broken images
+
