@@ -1,0 +1,246 @@
+
+
+# Tutorial: How to Self-Host GitHub Trophies and GitHub Stats Using Vercel
+
+This guide explains how to deploy your **own private instances** of:
+
+* GitHub Profile Trophy
+* GitHub Readme Stats
+
+This avoids the public servers, prevents service outages, bypasses API rate limits, and ensures your README always works.
+
+The tutorial reflects a fully working setup tested in practice.
+
+---
+
+# 1. Why Self-Host?
+
+Public GitHub stats/trophy services often fail due to:
+
+* API rate limits
+* Vercel deployment pauses
+* Too many users sharing one backend
+
+By deploying your own copies on Vercel, you get:
+
+* Your own API quota
+* Independent availability
+* A stable endpoint for your README
+
+---
+
+# 2. Setup for GitHub Readme Stats (Dynamic Stats Card)
+
+## Step 1: Fork the repository
+
+Fork:
+
+```
+https://github.com/anuraghazra/github-readme-stats
+```
+
+Your fork will be used as the source for your Vercel deployment.
+
+---
+
+## Step 2: Deploy the fork to Vercel
+
+1. Open [https://vercel.com](https://vercel.com)
+2. Click Add New → Project
+3. Select your fork
+4. Deploy with default settings
+
+Vercel automatically creates your domain:
+
+```
+https://github-readme-stats-<your-suffix>.vercel.app
+```
+
+---
+
+## Step 3: Add your GitHub token to Vercel
+
+The stats service requires GitHub authentication for private repositories and to avoid rate limits.
+
+In Vercel:
+
+Settings → Environment Variables → Add Variable
+
+Name:
+
+```
+PAT_1
+```
+
+Value:
+
+```
+<your_github_pat>
+```
+
+Save and redeploy.
+
+---
+
+## Step 4: Use your private stats URL in your README
+
+Example:
+
+```
+![GitHub Stats](https://github-readme-stats-<your-suffix>.vercel.app/api?username=behnamasadi&show_icons=true&theme=transparent&count_private=true&include_all_commits=true)
+```
+
+You now have a reliable stats card.
+
+---
+
+# 3. Setup for GitHub Profile Trophy (Trophy Badge)
+
+Unlike the stats project, the trophy project recently migrated to Deno. The new version does not work directly on Vercel unless configured exactly as required.
+
+The method below reflects what works.
+
+---
+
+## Step 1: Fork the official trophy repo
+
+Fork:
+
+```
+https://github.com/ryo-ma/github-profile-trophy
+```
+
+This gives you a Vercel-deployable version.
+
+---
+
+## Step 2: Deploy the fork to Vercel
+
+1. Open [https://vercel.com](https://vercel.com)
+2. Add New → Project
+3. Import your trophy fork
+4. Deploy with default settings
+
+Your domain will look like:
+
+```
+https://github-profile-trophy-<your-suffix>.vercel.app
+```
+
+---
+
+## Step 3: Add your GitHub token to Vercel
+
+Unlike the stats project, the trophy project requires a different environment variable name.
+
+Go to:
+
+Vercel → Project → Settings → Environment Variables → Add
+
+Name:
+
+```
+GITHUB_TOKEN1
+```
+
+Value:
+
+```
+<your_github_pat>
+```
+
+Save and redeploy.
+
+This exact variable name is required for the current trophy implementation.
+
+---
+
+## Step 4: Use your private trophy URL in your README
+
+The root URL works for trophies.
+
+Example:
+
+```
+![trophy](https://github-profile-trophy-<your-suffix>.vercel.app/?username=behnamasadi&theme=onedark&margin-w=10&margin-h=10)
+```
+
+You can adjust:
+
+* theme
+* margin-w
+* margin-h
+* no-bg
+* no-frame
+* row
+* column
+
+---
+
+# 4. Recommended Themes and Settings
+
+### GitHub Stats
+
+```
+theme=transparent
+theme=github_dark
+theme=tokyonight
+theme=onedark
+```
+
+### Trophy Themes
+
+```
+theme=onedark
+theme=gruvbox
+theme=discord
+theme=dracula
+theme=flat
+```
+
+---
+
+# 5. Why This Works
+
+The key points that made everything functional:
+
+1. **GitHub Readme Stats uses PAT_1 as the credential variable**
+   Vercel must have `PAT_1` defined.
+
+2. **GitHub Profile Trophy requires GITHUB_TOKEN1 specifically**
+   Other names do not work for the current codebase.
+
+3. **Both projects can be deployed using Vercel Hobby**
+   No need for paid plans or always-running servers.
+
+4. **Your GitHub README now loads everything from your private Vercel deployments**
+   This avoids dependency on the public servers that frequently fail.
+
+---
+
+# 6. Example Final README Section
+
+```
+## GitHub Stats
+![GitHub Stats](https://github-readme-stats-<your-suffix>.vercel.app/api?username=behnamasadi&show_icons=true&theme=transparent&count_private=true&include_all_commits=true)
+
+## GitHub Trophies
+![trophy](https://github-profile-trophy-<your-suffix>.vercel.app/?username=behnamasadi&theme=onedark&margin-w=10&margin-h=10)
+```
+
+Replace `<your-suffix>` with your Vercel project domain.
+
+---
+
+# 7. Optional Enhancements
+
+You can also add:
+
+* Top Language card
+* Contribution streaks
+* Custom badges
+* Visitor counters
+* SVG caching
+* Fallback static badges generated via GitHub Actions
+
+
