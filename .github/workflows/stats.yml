@@ -36,13 +36,18 @@ jobs:
           GH_FALLBACK: ${{ github.token }}
         run: |
           check() {
-            curl -s -o /dev/null -w "%{http_code}" \
+            # Must exercise a field fine-grained PATs cannot access
+            # (stargazers via GraphQL) — a plain viewer query passes for
+            # tokens that still break the stats card.
+            local resp
+            resp=$(curl -s \
               -H "Authorization: bearer $1" \
               -H "Content-Type: application/json" \
-              -d '{"query":"query{viewer{login}}"}' \
-              https://api.github.com/graphql
+              -d '{"query":"query{user(login:\"behnamasadi\"){repositories(first:5,ownerAffiliations:OWNER){nodes{stargazers{totalCount}}}}}"}' \
+              https://api.github.com/graphql)
+            echo "$resp" | grep -q '"totalCount"' && ! echo "$resp" | grep -q '"errors"'
           }
-          if [ -n "$PAT" ] && [ "$(check "$PAT")" = "200" ]; then
+          if [ -n "$PAT" ] && check "$PAT"; then
             echo "Using PAT secret"
             echo "PAT_1=$PAT" >> "$GITHUB_ENV"
           else
