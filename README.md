@@ -24,14 +24,14 @@ I'm a robotics software developer with several years of experience building robu
 
 
 ## 📊 GitHub Stats
-![GitHub Stats](https://github-readme-stats-lemon-chi.vercel.app/api?username=behnamasadi&show_icons=true&theme=transparent&count_private=true&include_all_commits=true)
+![GitHub Stats](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/github-stats.svg)
 
 ## 🏆 GitHub Trophies
-![trophy](https://github-profile-trophy-beta-six.vercel.app/?username=behnamasadi&margin-w=10&margin-h=10)
+![trophy](https://github-profile-trophy.deno.dev/?username=behnamasadi&margin-w=10&margin-h=10)
 
 
 ## 📊 Top Langs
-![Top Langs](https://github-readme-stats-lemon-chi.vercel.app/api/top-langs/?username=behnamasadi&layout=compact&theme=transparent)
+![Top Langs](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/top-langs.svg)
 
 
 ## 🚀 Tools & Technologies

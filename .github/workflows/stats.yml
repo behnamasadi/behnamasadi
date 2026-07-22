@@ -8,23 +8,57 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Download GitHub Stats SVG
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Clone github-readme-stats
+        run: git clone --depth 1 https://github.com/anuraghazra/github-readme-stats.git /tmp/grs
+
+      - name: Install github-readme-stats deps
+        run: npm install --omit=dev --ignore-scripts
+        working-directory: /tmp/grs
+
+      - name: Pick a working token
+        # Prefer the PAT secret (sees private contributions); fall back to
+        # the workflow token if the PAT is missing, expired, or lacks
+        # GraphQL access (fine-grained PATs do not work here).
         env:
-          TOKEN: ${{ secrets.PAT }}
+          PAT: ${{ secrets.PAT }}
+          GH_FALLBACK: ${{ github.token }}
         run: |
-          curl -H "Authorization: token $TOKEN" \
-            "https://github-readme-stats.vercel.app/api?username=behnamasadi&show_icons=true&count_private=true&include_all_commits=true&theme=transparent" \
-            --output output/github-stats.svg
+          check() {
+            curl -s -o /dev/null -w "%{http_code}" \
+              -H "Authorization: bearer $1" \
+              -H "Content-Type: application/json" \
+              -d '{"query":"query{viewer{login}}"}' \
+              https://api.github.com/graphql
+          }
+          if [ -n "$PAT" ] && [ "$(check "$PAT")" = "200" ]; then
+            echo "Using PAT secret"
+            echo "PAT_1=$PAT" >> "$GITHUB_ENV"
+          else
+            echo "PAT missing or rejected by GraphQL; using workflow token"
+            echo "PAT_1=$GH_FALLBACK" >> "$GITHUB_ENV"
+          fi
+
+      - name: Render stats cards
+        env:
+          GRS_DIR: /tmp/grs
+        run: node scripts/render-stats.mjs
 
       - name: Commit stats
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add output/github-stats.svg
+          git add output/github-stats.svg output/top-langs.svg
           git commit -m "Update GitHub Stats" || echo "No changes"
           git push
