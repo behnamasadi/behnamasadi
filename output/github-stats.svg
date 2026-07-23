@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Behnam Asadi's GitHub Stats, Rank: A</title>
-        <desc id="descId">Total Stars Earned: 475, Total Commits  : 4175, Total PRs: 123, Total Issues: 8, Contributed to (last year): 2</desc>
+        <desc id="descId">Total Stars Earned: 477, Total Commits  : 4175, Total PRs: 126, Total Issues: 8, Contributed to (last year): 2</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 60.81646622043654;
+        stroke-dashoffset: 60.321004413631655;
       }
     }
   
@@ -162,7 +162,7 @@
         x="219.01"
         y="12.5"
         data-testid="stars"
-      >475</text>
+      >477</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -192,7 +192,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >123</text>
+      >126</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
