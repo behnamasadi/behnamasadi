@@ -1,7 +1,7 @@
 // Render github-readme-stats cards to SVG files by invoking its Vercel
 // handlers with a mock req/res. Run from a checkout of this repo with
 // GRS_DIR pointing at a clone of anuraghazra/github-readme-stats and
-// PAT_1 set to a GitHub token (the workflow token: public data only).
+// PAT_1 set to a classic GitHub token with no scopes (public data only).
 import { writeFileSync } from "fs";
 
 const mockRes = (outPath) => ({
