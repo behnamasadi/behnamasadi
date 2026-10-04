@@ -27,7 +27,7 @@ I'm a robotics software developer with several years of experience building robu
 ![GitHub Stats](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/github-stats.svg)
 
 ## 🏆 GitHub Trophies
-![trophy](https://github-profile-trophy.deno.dev/?username=behnamasadi&margin-w=10&margin-h=10)
+![GitHub Trophies](https://raw.githubusercontent.com/behnamasadi/behnamasadi/main/output/trophy.svg)
 
 
 ## 📊 Top Langs
