@@ -27,22 +27,19 @@ jobs:
         run: npm install --omit=dev --ignore-scripts
         working-directory: /tmp/grs
 
-      # Public data only. The cards need a PAT (the workflow token may not read
-      # stargazers), and it must be a classic token with NO scopes: such a token
-      # sees public data only, so nothing private reaches the cards.
-      - name: Check the token sees public data only
+      # The cards need a classic PAT (fine-grained tokens cannot read
+      # stargazers via GraphQL). With the repo scope the totals include private
+      # contributions (counts only, no repo names); without it, public only.
+      - name: Check the token
         env:
           PAT: ${{ secrets.PAT }}
         run: |
           if [ -z "$PAT" ]; then echo "::error::secret PAT is not set"; exit 1; fi
-          # Fine-grained tokens report no scopes but may still reach private repos.
           case "$PAT" in ghp_*) ;; *) echo "::error::secret PAT must be a classic token (ghp_...)"; exit 1;; esac
           scopes=$(curl -sS -o /dev/null -D - -H "Authorization: token $PAT" https://api.github.com/user \
             | tr -d '\r' | awk -F': ' 'tolower($1)=="x-oauth-scopes"{print $2}')
-          if [ -n "$scopes" ]; then
-            echo "::error::secret PAT has scopes ($scopes); use a classic token with no scopes"
-            exit 1
-          fi
+          echo "Token scopes: ${scopes:-none}"
+          case ", $scopes," in *", repo,"*) ;; *) echo "::warning::PAT lacks the repo scope; private contributions are not counted";; esac
           echo "PAT_1=$PAT" >> "$GITHUB_ENV"
 
       - name: Render stats cards
